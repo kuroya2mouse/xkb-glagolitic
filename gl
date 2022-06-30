@@ -1,0 +1,77 @@
+// Windows layout
+default partial alphanumeric_keys
+xkb_symbols "winkeys" {
+
+    include "gl(standart)"
+    name[Group1]= "glagolitic";
+
+    key <AE03> { [           3,  numerosign  ] };
+    key <AE04> { [           4,   semicolon  ] };
+    key <AE05> { [           5,     percent  ] };
+    key <AE06> { [           6,       colon  ] };
+    key <AE07> { [           7,    question  ] };
+    key <AE08> { [           8,    asterisk, U20BD  ] };
+
+    key <AB10> { [	period,       comma  ] };
+    key <BKSL> { [   backslash,       slash  ] };
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "standart" {
+
+	key <AE01> { [           1,      exclam  ] };
+	key <AE02> { [           2,    quotedbl  ] };
+	key <AE03> { [           3,  numbersign  ] };
+	key <AE04> { [           4,    asterisk  ] };
+	key <AE05> { [           5,       colon  ] };
+	key <AE06> { [           6,       comma  ] };
+	key <AE07> { [           7,      period  ] };
+	key <AE08> { [           8,   semicolon  ] };
+	key <AE09> { [           9,   parenleft  ] };
+	key <AE10> { [           0,  parenright  ] };
+	key <AE11> { [	 minus,  underscore  ] };
+	key <AE12> { [	 equal,        plus  ] };
+	key <BKSL> { [   backslash,         bar  ] };
+
+	key <AB10> { [	 slash,    question  ] };
+	key <LSGT> { [	 slash,         bar  ] };
+
+        key <TLDE> { [ U2c56,	U2c26,	U2c59,	U2c29 ] };      // Ⱖ Ⱙ 
+	key <AD01> { [ U2c3b,	U2c0b,	U2c5c,	U2c2c ] };	// Ⰻ Ⱜ
+	key <AD02> { [ U2c4c,	U2c1c ] };	// Ⱌ
+	key <AD03> { [ U2c46,	U2c16 ] };	// Ⱆ
+	key <AD04> { [ U2c3d,   U2c0d ] };	// Ⰽ
+	key <AD05> { [ U2c35,	U2c05,	U2c57,	U2c27 ] };	// Ⰵ Ⱗ
+	key <AD06> { [ U2c40,	U2c10 ] };	// Ⱀ
+	key <AD07> { [ U2c33,	U2c03,	U2c3c,	U2c0c ] };	// Ⰳ Ⰼ
+	key <AD08> { [ U2c4e,	U2c1e ] };	// Ⱎ
+	key <AD09> { [ U2c4b,	U2c1b ] };	// Ⱋ
+	key <AD10> { [ U2c38,	U2c08,	U2c37,	U2c07 ] };	// Ⰸ Ⰷ
+	key <AD11> { [ U2c48,	U2c18,	U2c52,	U2c22 ] };	// Ⱈ Ⱒ
+	key <AD12> { [ U2c4f,	U2c1f ] };	// Ⱏ
+
+	key <AC01> { [ U2c47,	U2c17,	U2c5a,	U2c2a ] };	// Ⱇ Ⱚ
+	key <AC02> { [ U2c5b,	U2c2b,	U2c58,	U2c28 ] };	// Ⱛ Ⱘ
+	key <AC03> { [ U2c32,	U2c02  ] };	// Ⰲ
+	key <AC04> { [ U2c30,	U2c00,	U2c5d,	U2c2d ] };	// Ⰰ Ⱝ
+	key <AC05> { [ U2c42,	U2c12,	U2c4a,	U2c1a ] };	// Ⱂ Ⱊ
+	key <AC06> { [ U2c43,	U2c13 ] };	// Ⱃ
+	key <AC07> { [ U2c41,	U2c11,	U2c49,	U2c19 ] };	// Ⱁ Ⱉ
+	key <AC08> { [ U2c3e,	U2c0e ] };	// Ⰾ
+	key <AC09> { [ U2c34,	U2c04 ] };	// Ⰴ
+	key <AC10> { [ U2c36,	U2c06 ] };	// Ⰶ
+	key <AC11> { [ U2c54,	U2c24,	U2c55,	U2c25 ] };	// Ⱔ Ⱕ
+
+	key <AB01> { [ U2c51,	U2c21 ] };	// Ⱑ
+	key <AB02> { [ U2c4d,	U2c1d ] };	// Ⱍ
+	key <AB03> { [ U2c44,	U2c14 ] };	// Ⱄ
+	key <AB04> { [ U2c3f,	U2c0f,	U2c5e,	U2c2e ] };	// Ⰿ Ⱞ
+	key <AB05> { [ U2c3A,	U2c0A,	U2c39,	U2c09 ] };	// Ⰺ Ⰹ
+	key <AB06> { [ U2c45,	U2c15 ] };	// Ⱅ
+	key <AB07> { [ U2c50,	U2c20 ] };	// Ⱐ
+	key <AB08> { [ U2c31,	U2c01 ] };	// Ⰱ
+	key <AB09> { [ U2c53,	U2c23 ] };	// Ⱓ
+
+ include "level3(ralt_switch)"
+ include "kpdl(comma)"
+};
